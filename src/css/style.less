@@ -1,0 +1,200 @@
+@import "colors";
+@import "animations";
+
+@font-face {
+    font-family: "Rostelecom basis";
+    src: url("../assets/fonts/RostelecomBasis-Light.otf") format("opentype");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Rostelecom basis";
+    src: url("../assets/fonts/RostelecomBasis-Regular.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Rostelecom basis";
+    src: url("../assets/fonts/RostelecomBasis-Medium.otf") format("opentype");
+    font-weight: 500;
+}
+
+
+@font-face {
+    font-family: "Rostelecom basis";
+    src: url("../assets/fonts/RostelecomBasis-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rostelecom basis", "Tahoma", "sans-serif";
+    background-image: url("../assets/img/corner_top_left.png"), url("../assets/img/corner_bottom_right.png");
+    background-position: top left, bottom right;
+    background-size: 480px, 258px;
+    background-repeat: no-repeat, no-repeat;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+
+}
+
+hr {
+    border-top: 1px solid @baseViolet;
+    border-bottom: none;
+    background: none;
+}
+
+h1 {
+    color: @baseViolet;
+    font-size: 24px;
+}
+
+h2 {
+    color: @baseViolet;
+    font-size: 20px;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+h3 {
+    color: @darkGrey;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+
+.page {
+    margin: auto;
+    width: 1174px;
+
+}
+
+.main-logo {
+    display: inline-block;
+    width: 250px;
+    height: 94px;
+    padding-left: 3px;
+    vertical-align: top;
+}
+
+
+.clearfix {
+    clear:both;
+}
+
+.menu-icon {
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+    background: url("/img/menu.png") no-repeat;
+    background-size: 35px 25px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+a {
+    color: @baseViolet;
+    font-weight: 700;
+}
+
+
+
+.rtk-button-port {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+
+    padding: 8px 20px 8px;
+    border-radius: 10px;
+    border: 2px solid @baseViolet;
+    background-color: #fefefe;
+    color: @baseViolet;
+    cursor: pointer;
+}
+
+.rtk-button {
+    display: inline-block;
+
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    padding: 23px 83px 20px;
+    border-radius: 10px;
+    border: 2px solid @baseViolet;
+    background-color: #fefefe;
+    color: @baseViolet;
+    cursor: pointer;
+}
+
+.slide2 {
+    height: 100%;
+    text-align: center;
+    display: table !important;
+}
+.slide2 div {
+
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+.site-section {
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+.base-info-block {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid @baseViolet;
+    transition: height 0.3s ease;
+    overflow: hidden;
+
+    border-radius: 5px;
+}
+
+.no-top-margin {
+    margin-top: 0;
+}
+
+.header-icon {
+    margin-right: 10px;
+}
+
+.grey {
+    color: @lightGrey;
+}
+
+.float-right {
+    float: right;
+}
+
+.header-png-icon {
+    height: 20px;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.save-excel-icon {
+    color: @baseViolet;
+    opacity: 0.5;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1.0 !important;
+    }
+}

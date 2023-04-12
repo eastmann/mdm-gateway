@@ -1,0 +1,61 @@
+@import "../../../../css/colors";
+
+.search-box {
+    position: relative;
+}
+
+.search-box-input-line {
+    display:grid;
+    grid-template-columns: calc(100% - 100px) 100px;
+    box-sizing: border-box;
+
+    border: 1px solid @baseViolet;
+    border-radius: 5px;
+
+input {
+    height: 40px;
+
+    border: none;
+    outline: none;
+
+    font-size: 18px;
+    margin-left: 10px;
+}
+}
+.search-box-button {
+    height: 40px;
+    line-height: 40px;
+    color: @baseViolet;
+    text-align: center;
+    border-left: 1px solid @baseViolet;
+    box-sizing: border-box;
+
+    cursor: pointer;
+}
+.suggestions {
+    position: absolute;
+    top: 42px;
+    z-index: 2;
+    width: 100%;
+    border: 1px solid @lightGrey;
+    box-sizing: border-box;
+    background: #FFFFFF;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.suggestion {
+    padding: 2px 0 2px 10px;
+    cursor: pointer;
+    font-size: 18px;
+
+&.selected {
+     background: @lightGrey;
+ }
+}
+
+.company-suggestion-name {
+    font-weight: bold;
+    color: @baseViolet;
+    padding-top: 4px;
+}
